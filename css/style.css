@@ -6,6 +6,11 @@
 }
 
 /* LAYOUT */
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 body{
     background-color: aquamarine;
@@ -54,6 +59,10 @@ header{
 
 /* GRID LAYOUT */
 
+main{
+    flex-grow: 1;
+}
+
 .grid{
     display: flex;
     flex-wrap: wrap;
@@ -87,3 +96,9 @@ header{
     width: calc(100% / 7);
 }
 
+/* FOOTER */
+
+footer{
+    background-color: white;
+    padding: 24px 0;
+}
