@@ -1,5 +1,80 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* LAYOUT */
+
+body{
+    background-color: aquamarine;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.container_lg{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    background-color: white;
+}
+
+.header_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.submit{
+    padding:0 30px ;
+}
+
+.difficulties{
+    width: 140px;
+    padding-left: 10px;
+}
+
+/* GRID LAYOUT */
+
+.hidden{
+    display: none;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell{
+    border: 1px solid black;
+    aspect-ratio: 1;
+}
+
+.colored{
+    background-color: lightblue;
+}
+
+/* DIFFICULTIES */
+.difficulty1{
+    width: calc(100% / 10);
+}
+
+.difficulty2{
+    width: calc(100% / 9);
+}
+
+.difficulty3{
+    width: calc(100% / 7);
+}
+
