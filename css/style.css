@@ -50,10 +50,6 @@ header{
 
 /* GRID LAYOUT */
 
-.hidden{
-    display: none;
-}
-
 .grid{
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +60,8 @@ header{
     border: 1px solid black;
     aspect-ratio: 1;
     width: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .colored{

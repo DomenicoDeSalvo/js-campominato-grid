@@ -33,6 +33,16 @@ submitElement.addEventListener('click', function(){
             cellElement.classList.add('difficulty3');
         }
 
+        //Inserire le celle nel DOM.
+        gridElement.append(cellElement);
+
+        //Quando si clicca su una cella essa si colora di azzurro, cliccando una seconda volta il colore torna normale.
+        cellElement.addEventListener('click', function(){
+            cellElement.classList.toggle('colored');
+            //Viene stampato un console log in cui si dichiare quale cella è stata cliccata.
+            console.log('È stata cliccata la cella numero ' + num);
+        })
+
     }
     
 })
