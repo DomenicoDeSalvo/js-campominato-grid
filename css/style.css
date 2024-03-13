@@ -22,6 +22,10 @@ body{
     margin: 0 auto;
 }
 
+.hide{
+    display: none;
+}
+
 /* HEADER */
 
 header{
@@ -61,7 +65,9 @@ header{
     aspect-ratio: 1;
     width: 10px;
     text-align: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .colored{

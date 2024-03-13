@@ -14,6 +14,12 @@ const gridElement = document.querySelector('.grid');//Element||Null
 submitElement.addEventListener('click', function(){
     difficulty = difficultyElement.value;//string
 
+    // NOTA PER CHI CORREGGE: Non so se questa cosa sia corretta, ma è l'unico modo che mi viene in mente per evitare che, cliccando più volte sul bottone play, si creino più griglie una sotto l'altra.
+    //Far scomparire la selezione della difficoltà ed il bottone play per evitare che vengano create più griglie.
+    const difficultySelectionElement = document.querySelector('.difficulty_selection'); //Element || Null
+    difficultySelectionElement.classList.add('hide'); 
+
+
     // In base alla difficoltà verrà generata una griglia di dimensioni diverse.
     for(let i = 0; i < gridSize(difficulty); i++){
 
