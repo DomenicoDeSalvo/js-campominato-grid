@@ -9,10 +9,12 @@ let difficulty = '';//string
 // La griglia sarà formata da quadrati uguali che si troveranno all'interno del div con classe grid del DOM
 // Acquisizione dell div.
 const gridElement = document.querySelector('.grid');//Element||Null
+//All'apertura della pagina sarà già presente una prima griglia.
 generateGrid()
 //Assegnazione del valore al click.
 submitElement.addEventListener('click', generateGrid);
 function generateGrid(){
+    //Cliccando il bottone la griglia prevedente sparirà per lasciare spazio ad una nuova.
     gridElement.innerHTML = ('');
 
     difficulty = difficultyElement.value;//string
@@ -50,10 +52,13 @@ function generateGrid(){
 }
     
 
-
-// FUNZIONI
 //Funzione che avrà il compito di determinare la grandezza della griglia.
 function gridSize(number){
-    size = parseInt(number ** 2);
+    let size = 81;
+    if (number === '10'){
+        size = 100;
+    } else if (number === '7'){
+        size = 49;
+    }
     return size
 }
