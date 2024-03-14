@@ -50,6 +50,7 @@ header{
 
 .submit{
     padding:0 30px ;
+    cursor: pointer;
 }
 
 .difficulties{
@@ -77,6 +78,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
 }
 
 .colored{
