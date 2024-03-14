@@ -30,13 +30,7 @@ function generateGrid(){
         const num = i + 1; //Number
         cellElement.innerHTML = num;
         //A Diversa difficoltà corrisponde una diversa quantità di celle, che quindi avranno dimensioni diverse.
-        if(difficulty === '10') {
-            cellElement.classList.add('difficulty1');
-        } else if(difficulty === '9') {
-            cellElement.classList.add('difficulty2');
-        } else {
-            cellElement.classList.add('difficulty3');
-        }
+        cellElement.style.width = `calc(100% / ${difficulty})`
         
         //Inserire le celle nel DOM.
         gridElement.append(cellElement);
