@@ -87,19 +87,6 @@ main{
     background-color: lightblue;
 }
 
-/* DIFFICULTIES */
-.difficulty1{
-    width: calc(100% / 10);
-}
-
-.difficulty2{
-    width: calc(100% / 9);
-}
-
-.difficulty3{
-    width: calc(100% / 7);
-}
-
 /* FOOTER */
 
 footer{
